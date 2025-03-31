@@ -1,0 +1,138 @@
+.calendar-wrapper {
+    width: 100%;
+  }
+  
+  .calendar-header {
+    margin-bottom: 20px;
+  }
+  
+  .calendar-year-month {
+    background-color: #3f51b5;
+    color: white;
+    padding: 15px;
+    border-radius: 4px;
+    text-align: center;
+  }
+  
+  .calendar-year {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .calendar-date {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  .time-slots-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .time-slot {
+    background-color: #3f51b5;
+    color: white;
+    padding: 15px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  .calendar-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .nav-button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #3f51b5;
+    cursor: pointer;
+    padding: 5px 10px;
+  }
+  
+  .current-month {
+    font-size: 18px;
+    font-weight: 500;
+    color: #3f51b5;
+  }
+  
+  .calendar-grid {
+    margin-bottom: 20px;
+  }
+  
+  .calendar-weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .weekday {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    padding: 5px;
+  }
+  
+  .calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+  }
+  
+  .calendar-day {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .calendar-day:hover:not(.empty) {
+    background-color: #f0f0f0;
+  }
+  
+  .calendar-day.selected {
+    background-color: #3f51b5;
+    color: white;
+  }
+  
+  .calendar-day.empty {
+    cursor: default;
+  }
+  
+  .time-slots-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .time-slot-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .time-slot-item:hover {
+    background-color: #f0f0f0;
+    border-color: #bbb;
+  }
+  
+  .time-slot-item.selected {
+    background-color: #3f51b5;
+    color: white;
+    border-color: #3f51b5;
+  }

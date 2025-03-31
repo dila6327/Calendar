@@ -1,0 +1,85 @@
+.room-selection-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .room-selection-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    width: 100%;
+  }
+  
+  .room-dropdown-container {
+    margin-bottom: 20px;
+  }
+  
+  .room-dropdown {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+  }
+  
+  .room-dropdown:focus {
+    outline: none;
+    border-color: #3f51b5;
+  }
+  
+  .room-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .room-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .room-item:hover:not(.unavailable) {
+    background-color: #f0f0f0;
+    border-color: #bbb;
+  }
+  
+  .room-item.selected {
+    background-color: #3f51b5;
+    color: white;
+    border-color: #3f51b5;
+  }
+  
+  .room-item.unavailable {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  
+  .unavailable-tag {
+    color: #f44336;
+    font-size: 14px;
+  }
+  
+  .btn-confirm-room {
+    background-color: #3f51b5;
+    color: white;
+    padding: 12px;
+    border-radius: 4px;
+    font-weight: 500;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-confirm-room:hover {
+    background-color: #303f9f;
+  }

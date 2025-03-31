@@ -1,0 +1,45 @@
+.description-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .description-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    width: 100%;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+  }
+  
+  .form-select:focus {
+    outline: none;
+    border-color: #3f51b5;
+  }
+  
+  .btn-confirm-description {
+    background-color: #3f51b5;
+    color: white;
+    padding: 12px;
+    border-radius: 4px;
+    font-weight: 500;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-confirm-description:hover {
+    background-color: #303f9f;
+  }
